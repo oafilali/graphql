@@ -2,11 +2,15 @@
 
 A responsive web application that displays user profile information and statistics from GritLab's GraphQL API.
 
+## Live Demo
+
+**[View Live Demo](https://oafilali.github.io/graphql/)**
+
 ## Features
 
 - **Secure Authentication**: Login with username/email and password
 - **User Profile Information**: Display basic user data (ID, login, name, email, etc.)
-- **Interactive Data Visualizations**: 
+- **Interactive Data Visualizations**:
   - XP Growth Chart: Track your progress over time
   - Audit Ratio Chart: View your up/down audit statistics
   - Project Timeline: Visualize your completed projects with pass/fail status
