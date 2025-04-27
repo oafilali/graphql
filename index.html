@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GraphQL Profile</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div id="toast-message" class="toast-message"></div>
-    
+
     <div id="login_div" class="container">
-        <h1>Login to Your Profile</h1>
-        <form id="logInForm">
-            <div class="form-group">
-                <label for="userField">Username or Email</label>
-                <input type="text" id="userField" name="userField" placeholder="Enter username or email">
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter password">
-            </div>
-            <button type="button" id="login-btn">Login</button>
-        </form>
+      <h1>Login to Your Profile</h1>
+      <form id="logInForm">
+        <div class="form-group">
+          <label for="userField">Username or Email</label>
+          <input
+            type="text"
+            id="userField"
+            name="userField"
+            placeholder="Enter username or email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+          />
+        </div>
+        <button type="button" id="login-btn">Login</button>
+      </form>
     </div>
-    
+
     <div id="profile_div" class="container">
-        <h1>Your Profile</h1>
-        <div class="user-info">
-            <p><strong>ID:</strong> <span id="id"></span></p>
-            <p><strong>Login:</strong> <span id="login"></span></p>
-            <p><strong>Name:</strong> <span id="name"></span></p>
-            <p><strong>Email:</strong> <span id="email"></span></p>
-            <p><strong>Gender:</strong> <span id="gender"></span></p>
-            <p><strong>Nationality:</strong> <span id="nationality"></span></p>
-            <p><strong>Campus:</strong> <span id="campus"></span></p>
+      <h1>Your Profile</h1>
+      <div class="user-info">
+        <p><strong>ID:</strong> <span id="id"></span></p>
+        <p><strong>Login:</strong> <span id="login"></span></p>
+        <p><strong>Name:</strong> <span id="name"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Gender:</strong> <span id="gender"></span></p>
+        <p><strong>Nationality:</strong> <span id="nationality"></span></p>
+        <p><strong>Campus:</strong> <span id="campus"></span></p>
+      </div>
+
+      <!-- Skills section -->
+      <div class="skills-section">
+        <h2>Skills</h2>
+        <div id="skills-table" class="chart-container">
+          <!-- Skills table will be inserted here -->
         </div>
-        
-        <div class="stats-section">
-            <h2>Statistics</h2>
-            
-            <div class="chart-container">
-                <svg id="xpChart" width="100%" height="300"></svg>
-            </div>
-            
-            <div class="chart-container">
-                <svg id="auditChart" width="100%" height="200"></svg>
-            </div>
-            
-            <div class="chart-container">
-                <div class="projects-summary">
-                    <p><strong>Completed Projects:</strong> <span id="completedCount">0</span></p>
-                    <p><strong>Success Rate:</strong> <span id="successRate">0%</span></p>
-                </div>
-            </div>
-            
-            <div class="chart-container">
-                <svg id="passFailChart" width="100%" height="auto"></svg>
-            </div>
+      </div>
+      <div class="chart-container">
+        <h2>Projects-summary</h2>
+        <div class="projects-summary">
+          <p>
+            <strong>Completed Projects:</strong>
+            <span id="completedCount">0</span>
+          </p>
+          <p><strong>Success Rate:</strong> <span id="successRate">0%</span></p>
         </div>
-        
-        <button id="logout-btn">Logout</button>
+      </div>
+
+      <div class="stats-section">
+        <h2>Statistics</h2>
+
+        <div class="chart-container">
+          <svg id="xpChart" width="100%" height="300"></svg>
+        </div>
+
+        <div class="chart-container">
+          <svg id="auditChart" width="100%" height="200"></svg>
+        </div>
+
+        <div class="chart-container">
+          <svg id="passFailChart" width="100%" height="auto"></svg>
+        </div>
+      </div>
+
+      <button id="logout-btn">Logout</button>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
