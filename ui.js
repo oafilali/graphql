@@ -172,7 +172,7 @@ function drawXPGrowthChart(xpData) {
   // Chart dimensions
   const width = svg.clientWidth || 600
   const height = svg.clientHeight || 300
-  const margin = { top: 40, right: 40, bottom: 40, left: 70 }
+  const margin = { top: 40, right: 40, bottom: 40, left: 100 }
   const chartWidth = width - margin.left - margin.right
   const chartHeight = height - margin.top - margin.bottom
 
